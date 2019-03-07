@@ -21,6 +21,6 @@ DIFF = set(DCT1.items()) ^ set(DCT2.items())
 
 with open("diff.csv", "w") as OUT_FILE:
     OUT_CSV = csv.writer(OUT_FILE)
-    OUT_CSV.writerow(HEADERS) # define HEADERS before running function
+    OUT_CSV.writerow(HEADERS)
     for player in DIFF:
         OUT_CSV.writerow(player)
