@@ -2,6 +2,7 @@
 
 import csv
 
+
 def write_to_csv(name_of_file, dct):
     """ write dictionary to csv """
     with open(name_of_file, 'w') as out_file:
