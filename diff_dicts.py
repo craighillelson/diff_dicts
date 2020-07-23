@@ -3,13 +3,13 @@
 import csv
 
 
-def write_to_csv(name_of_file, dct):
+def write_to_csv(file_name, dct):
     """Write dictionary to csv."""
-    with open(name_of_file, 'w') as out_file:
+    with open(file_name, 'w') as out_file:
         out_csv = csv.writer(out_file)
         out_csv.writerow(['player', 'number'])
-        for player, jersey_num in dct.items():
-            keys_values = (player, jersey_num)
+        for player, jersey_number in dct.items():
+            keys_values = (player, jersey_number)
             out_csv.writerow(keys_values)
 
 
